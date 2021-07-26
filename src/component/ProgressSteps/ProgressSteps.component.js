@@ -15,7 +15,6 @@ export class ProgressSteps extends PureComponent {
   renderStep() {
     const { steps, currentStep } = this.props;
     const currStepIndex = steps?.findIndex((el) => el.id === currentStep);
-    
     return (
       <>
         {steps?.map((el, i) => (

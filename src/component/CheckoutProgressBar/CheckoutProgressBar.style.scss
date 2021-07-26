@@ -1,82 +1,82 @@
-.CheckoutProgressBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+// .CheckoutProgressBar {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   position: relative;
+//   overflow: hidden;
 
-  background: var(--breadcrumbs-background);
-  min-height: 80px;
+//   background: var(--breadcrumbs-background);
+//   min-height: 80px;
 
-  &-Step {
-    &:last-child {
-      &::after {
-        content: '';
-        display: block;
-        width: 90%;
-        left: 55%;
-        top: 25%;
-        height: 3px;
-        background-color: $default-secondary-dark-color;
-        position: absolute;
-      }
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    width: 100%;
-    &::before {
-      content: '';
-      display: block;
-      width: 90%;
-      left: -45%;
-      top: 25%;
-      height: 3px;
-      background-color: $default-secondary-dark-color;
-      position: absolute;
-      // transition: background-color 0.2s ease-in-out;
-    }
+//   &-Step {
+//     &:last-child {
+//       &::after {
+//         content: '';
+//         display: block;
+//         width: 90%;
+//         left: 55%;
+//         top: 25%;
+//         height: 3px;
+//         background-color: $default-secondary-dark-color;
+//         position: absolute;
+//       }
+//     }
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-around;
+//     position: relative;
+//     width: 100%;
+//     &::before {
+//       content: '';
+//       display: block;
+//       width: 90%;
+//       left: -45%;
+//       top: 25%;
+//       height: 3px;
+//       background-color: $default-secondary-dark-color;
+//       position: absolute;
+//       // transition: background-color 0.2s ease-in-out;
+//     }
 
-    &-Circle {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      text-align: center;
-      background-color: $default-secondary-dark-color;
-      color: $white;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 5px;
-    }
-    &-Title {
-      font-weight: bold;
-    }
-  }
-}
+//     &-Circle {
+//       width: 25px;
+//       height: 25px;
+//       border-radius: 50%;
+//       text-align: center;
+//       background-color: $default-secondary-dark-color;
+//       color: $white;
+//       text-align: center;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       margin-bottom: 5px;
+//     }
+//     &-Title {
+//       font-weight: bold;
+//     }
+//   }
+// }
 
-.selected {
-  &::before {
-    background-color: $default-primary-base-color;
-    @keyframes progress {
-      0% {
-        width: 10%;
-      }
-      50% {
-        width: 50%;
-      }
-      100% {
-        width: 90%;
-      }
-    }
-    animation: progress 0.5s linear;
-  }
-}
+// .selected {
+//   &::before {
+//     background-color: $default-primary-base-color;
+//     @keyframes progress {
+//       0% {
+//         width: 10%;
+//       }
+//       50% {
+//         width: 50%;
+//       }
+//       100% {
+//         width: 90%;
+//       }
+//     }
+//     animation: progress 0.5s linear;
+//   }
+// }
 
-.selectedCircle {
-  background-color: $default-primary-base-color;
-  transition: background-color 1000ms linear;
-}
+// .selectedCircle {
+//   background-color: $default-primary-base-color;
+//   transition: background-color 1000ms linear;
+// }

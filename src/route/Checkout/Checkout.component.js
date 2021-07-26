@@ -13,13 +13,10 @@ import './Checkout.extension.style.scss';
 /** @namespace Scanditask/Route/Checkout/Component/CheckoutComponent */
 
 export class CheckoutComponent extends SourceCheckout {
-  renderProgress() {
-    const { checkoutStep, isInStoreActivated } = this.props;
-    return <h1 className='hello'>Heello</h1>;
-  }
   render() {
     return (
       <main block='Checkout'>
+        {/* my progressbar component */}
         <CheckoutProgressBar steps={[SHIPPING_STEP,BILLING_STEP]} currentStep={this.props.checkoutStep} />
         <ContentWrapper
           wrapperMix={{ block: 'Checkout', elem: 'Wrapper' }}
@@ -28,7 +25,6 @@ export class CheckoutComponent extends SourceCheckout {
           {this.renderSummary(true)}
           <div block='Checkout' elem='Step'>
             {this.renderTitle()}
-            {/* {this.renderStoreInPickUpMethod()} */}
             {this.renderGuestForm()}
             {this.renderStep()}
             {this.renderLoader()}
